@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link href="./style.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="left-form">
-        <!-- <img src="./linus-nylund.jpg" alt="Pink sunset on the ocean"/> -->
-        <div class="logo">LOGO</div>
-        <div class="credit">Photo by Linus Nylund on Unsplash</div>
+        <div class="logo">
+            <img src="./heart.svg" alt="Heart Logo"/> LOGO
+            <img src="./heart.svg" alt="Heart Logo"/>
+        </div>
+        
+        <div class="credit">Photo by 
+            <a href="https://unsplash.com/@dreamsoftheoceans">
+            Linus Nylund</a>
+            on Unsplash
+            </div>
     </div>
 
     <div class="right-form">
@@ -33,20 +41,17 @@
 
                 <div class="contact-info-input">
                     <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name"
-                    required/>
+                    <input type="text" id="first_name" name="first_name"/>
                 </div>
 
                 <div class="contact-info-input">
                     <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name"
-                    required/>
+                    <input type="text" id="last_name" name="last_name"/>
                 </div>
 
                 <div class="contact-info-input">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email"
-                    required/>
+                    <input type="email" id="email" name="email"/>
                 </div>
 
                 <div class="contact-info-input">
@@ -54,16 +59,17 @@
                     <input type="tel" id="phone" name="phone"/>
                 </div>
 
-                <div class="contact-info-input">
+                <div class="contact-info-input" class="error">
                     <label for="pwd">PASSWORD</label>
                     <input type="password" id="pwd" name="password"
-                    required/>
+                    class="error" class="pwd"/>
+                    <div class="error-msg">*Passwords do not match</div>
                 </div>
 
                 <div class="contact-info-input">
-                    <label for="pwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="pwd" name="password"
-                    required/>  
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-pwd" name="password"
+                    class="error" class="check"/>  
                 </div>
 
             </div>
@@ -71,7 +77,7 @@
             <button type="submit">Create Account</button>
         </form>
 
-        <div>Already have an account? <a>Log in</a>
+        <div class="login">Already have an account? <a href="blabla">Log in</a>
         </div>
     </div>
     
